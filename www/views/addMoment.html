@@ -1,0 +1,17 @@
+﻿<form role='form' class='col-xs-12'>
+	<div class='form-group'>
+		<label for='title'>Moment title</label>
+		<input type='text' ng-model="moment.title" class='form-control' id='title' name='title' placeholder="Moment title"/>
+	</div>
+	<div class='form-group'>
+		<label for='image'>Moment images</label>
+		<button id="image" class='form-control btn btn-default'>Add image</button>
+		<img />
+	</div>
+	<div>
+		<label>
+			{{ moment.geolocation != undefined ? 'Localisation (actif)' : 'Localisation (recherche en cours...)' }}
+		</label>
+	</div>
+	<button ng-click="addMoment()" class='btn btn-default'>Add Moment</button>
+</form>
