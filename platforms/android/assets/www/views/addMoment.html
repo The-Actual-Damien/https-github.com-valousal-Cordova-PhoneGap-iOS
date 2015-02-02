@@ -5,8 +5,8 @@
 	</div>
 	<div class='form-group'>
 		<label for='image'>Moment images</label>
-		<button id="image" class='form-control btn btn-default'>Add image</button>
-		<img />
+		<button id="image" ng-click='addPicture()' class='form-control btn btn-default'>Add image</button>
+		<img src="{{ moment.image }}" class='img-create'/>
 	</div>
 	<div>
 		<label>

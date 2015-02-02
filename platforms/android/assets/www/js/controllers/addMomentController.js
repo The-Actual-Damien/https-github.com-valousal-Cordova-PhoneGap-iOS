@@ -2,7 +2,7 @@
 app.controller('addMomentController', function ($scope, $rootScope, $location, $cordovaGeolocation, $cordovaCamera, $cordovaFile) {
 
     $scope.moment = {
-        image: '',
+        image: 'images/place.PNG',
         title: ''
     };
 
@@ -52,13 +52,24 @@ app.controller('addMomentController', function ($scope, $rootScope, $location, $
     };
 
 
-    $scope.addPicture = function(){
-    	$cordovaCamera.getPicture()
-    		.then(function(imageData){
-    			$scope.moment.image = imageData;
+   $scope.addPicture = function () {
 
-    			
-    		})
+        $cordovaCamera.getPicture()
+            .then(function (imageData) {
+
+                $scope.moment.image = imageData;
+
+                var now = new Date();
+                var nowString = now.getYear() + '' + now.getMonth() + '' + now.getDay() + '_' + now.getHours() + '' + now.getMinutes() + '' + now.getSeconds();
+                var imageName = 'image-' + nowString + '.jpg';
+
+                $cordovaFile.moveFile(imageData, imageName)
+                    .then(function () {
+                        $scope.moment.image = '/' + imageName;
+                    }, errorHandler);
+
+            })
+
     };
 
 });

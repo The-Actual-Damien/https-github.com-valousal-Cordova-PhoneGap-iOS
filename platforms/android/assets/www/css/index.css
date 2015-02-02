@@ -30,3 +30,22 @@ p, label, a {
     width: 100%;
     margin: 0 auto;
 }
+
+
+.img-create {
+    height: 50vh;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+
+#divMap{
+
+    margin-top: 20px;
+    height: 40vh;
+
+}
