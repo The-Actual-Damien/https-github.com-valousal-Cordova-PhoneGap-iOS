@@ -2,7 +2,7 @@
 app.controller('addMomentController', function ($scope, $rootScope, $location, $cordovaGeolocation, $cordovaCamera, $cordovaFile) {
 
     $scope.moment = {
-        image: 'images/place.PNG',
+        image: '',
         title: ''
     };
 

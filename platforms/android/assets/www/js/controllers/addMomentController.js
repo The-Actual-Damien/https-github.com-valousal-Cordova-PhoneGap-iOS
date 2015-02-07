@@ -2,7 +2,7 @@
 app.controller('addMomentController', function ($scope, $rootScope, $location, $cordovaGeolocation, $cordovaCamera, $cordovaFile) {
 
     $scope.moment = {
-        image: 'images/place.PNG',
+        image: '',
         title: ''
     };
 
@@ -53,6 +53,17 @@ app.controller('addMomentController', function ($scope, $rootScope, $location, $
 
 
    $scope.addPicture = function () {
+        /*var options = {
+              quality: 50,
+              destinationType: Camera.DestinationType.DATA_URL,
+              sourceType: Camera.PictureSourceType.CAMERA,
+              allowEdit: true,
+              encodingType: Camera.EncodingType.JPEG,
+              targetWidth: 100,
+              targetHeight: 100,
+              saveToPhotoAlbum: true,
+              popoverOptions: CameraPopoverOptions
+            };*/
 
         $cordovaCamera.getPicture()
             .then(function (imageData) {
