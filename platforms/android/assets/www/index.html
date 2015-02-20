@@ -5,12 +5,13 @@
         <meta name="format-detection" content="telephone=no" />
         <meta name="msapplication-tap-highlight" content="no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" /> 
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>Les Vendanges de Fougeron</title>
 
         <!-- references -->
         <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
         <!-- Bootstrap -->
         <link href="content/bootstrap.min.css" rel="stylesheet" />
         <link href="content/bootstrap-theme.min.css" rel="stylesheet" />
@@ -35,15 +36,14 @@
         <script src="js/controllers/presentationController.js"></script>
 
 
-
-        <!-- Bing Maps -->
-        <script src="js/BingMaps/js/veapicore.js"></script>
+        <!-- Leaflet -->
+        <link rel='stylesheet' href='http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css' />
     </head>
-   
+
 
     <!-- BODY -->
     <body>
-       <div class="container">
+       <div class="container-fluid">
            <!-- Header -->
            <div class="page-header">
                <h1>Les vendanges de Fougeron<small>Cave à vins</small></h1>
@@ -60,7 +60,7 @@
        <!-- Footer avec le menu -->
        <footer class="navbar-center">
            <nav class="navbar-center navbar-fixed-bottom">
-               <ul class="nav nav-pills">
+               <ul class="nav nav-pills navbar-center">
                    <li><a href="#/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
                    <li><a href="#/presentation"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a></li>
                    <li><a href="#/wine"><span class="glyphicon glyphicon-glass" aria-hidden="true"></span></a></li>
@@ -76,7 +76,12 @@
 
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
-        <!-- plugin cordova -->
+
+       <!-- plugin cordova -->
         <script src="cordova_plugins.js"></script>
+
+        <!-- Leaflet -->
+       <script src='http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js'></script>
+
     </body>
 </html>

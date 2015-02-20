@@ -1,7 +1,6 @@
 app.controller('oneMomentController', function ($scope, $rootScope, $routeParams) {
 
     $scope.moment = $rootScope.moments[$routeParams.id];
-
     $scope.getMap = function () {
 
         Microsoft.Maps.loadModule(

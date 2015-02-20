@@ -1,4 +1,4 @@
-﻿<div class='navbarMoment'>
+﻿﻿<div class='navbarMoment'>
     <nav class="navbar navbar-fixed-top">
         <ul class="nav navbar-nav">
             <li class='pull-left'><a href="#/allmoment">All Moments</a></li>
@@ -10,10 +10,10 @@
 
 
 <div ng-repeat="moment in moments">
-	<div>
-		<a href='#/moment/{{ $index }}'>
-			<img class="img-moment" style="background:url('{{moment.image}}') 50% 50%;" src="images/transp.png"/>
-			<p>{{ moment.title }}</p>
-		</a>
-	</div>
+    <div>
+        <a href='#/moment/{{ $index }}'>
+            <img class="img-moment" style="background:url('{{moment.image}}') 50% 50%;" src="datas/img/transp.png"/>
+            <p>{{ moment.title }}</p>
+        </a>
+    </div>
 </div>

@@ -1,4 +1,4 @@
-﻿
+﻿﻿
 app.controller('addMomentController', function ($scope, $rootScope, $location, $cordovaGeolocation, $cordovaCamera, $cordovaFile) {
 
     $scope.moment = {
