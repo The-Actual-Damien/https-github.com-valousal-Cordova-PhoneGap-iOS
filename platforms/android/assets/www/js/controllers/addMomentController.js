@@ -30,7 +30,7 @@ app.controller('addMomentController', function ($scope, $rootScope, $location, $
     $scope.save = function () {
 
         requestFileSystem(window.PERSISTENT, 0, fsReceived, errorHandler);
-        $location.path('/');
+        $location.path('/allmoment');
 
     };
 

@@ -1,7 +1,7 @@
 
-var app = angular.module('myMoments', ['ngRoute', 'ngCordova']);
+var app = angular.module('Application', ['ngRoute', 'ngCordova', 'timer', 'ngResource']);
 
-app.config(function ($routeProvider, $compileProvider) {
+app.config(function ($routeProvider, $compileProvider, $locationProvider) {
 
     $compileProvider.imgSrcSanitizationWhitelist('/');
     $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|file|ghttps?|ms-appx|x-wmapp0):/);
@@ -22,10 +22,48 @@ app.config(function ($routeProvider, $compileProvider) {
             controller: 'wineController'
         })
 
+        .when('/wine/champagne', {
+            templateUrl: 'views/wine_champagne.html',
+            controller: 'wineController'
+        })
+
         .when('/about', {
             templateUrl: 'views/about.html',
             controller: 'aboutController'
         })
+
+
+
+
+
+
+        .when('/games/home', {
+            templateUrl: 'views/home.html',
+            controller: 'gameController'
+        })
+        .when('/games/play', {
+            templateUrl: 'views/game.html',
+            controller: 'gameController'
+        })
+        .when('/games/options', {
+            templateUrl: 'views/options.html',
+            controller: 'gameController'
+        })
+        .when('/games/score', {
+            templateUrl: 'views/score.html',
+            controller: 'gameController'
+        })
+        .when('/games/regles', {
+            templateUrl: 'views/regles.html',
+            controller: 'gameController'
+        })
+
+
+
+
+
+
+
 
         .when('/allmoment', {
             templateUrl: 'views/allMoments.html',

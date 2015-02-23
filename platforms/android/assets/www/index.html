@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app='myMoments'>
+<html ng-app='Application'>
     <head>
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
@@ -21,12 +21,17 @@
          <!-- angularjs -->
         <script src="js/lib/angular.min.js"></script>
         <script src="js/lib/angular-route.min.js"></script>
+        <script src="js/lib/angular-resource.min.js"></script>
+        <script src="js/lib/angular-sanitize.min.js"></script>
+        <script src="js/lib/angular-timer.min.js"></script>
 
         <!-- ng-cordova -->
         <script src="js/lib/ng-cordova.min.js"></script>
 
         <!-- custom scripts -->
+        <script src="js/script.js"></script>
         <script src="js/apps.js"></script>
+        <script src="js/services/Session.js"></script>
         <script src="js/controllers/addMomentController.js"></script>
         <script src="js/controllers/allMomentsController.js"></script>
         <script src="js/controllers/oneMomentController.js"></script>
@@ -34,6 +39,7 @@
         <script src="js/controllers/indexController.js"></script>
         <script src="js/controllers/wineController.js"></script>
         <script src="js/controllers/presentationController.js"></script>
+        <script src="js/controllers/gameController.js"></script>
 
 
         <!-- Leaflet -->
@@ -45,9 +51,18 @@
     <body>
        <div class="container-fluid">
            <!-- Header -->
-           <div class="page-header">
-               <h1>Les vendanges de Fougeron<small>Cave à vins</small></h1>
-           </div>
+           <header>
+               <div class="row">
+                   <div class='col-xs-2 home'>
+                        <a href="#/">
+                            <span class="glyphicon glyphicon-home text-center" aria-hidden="true"></span>
+                        </a>
+                   </div>
+                   <div class='col-xs-10'>
+                       <h1 class='text-right'>Les vendanges de Fougeron<br><small>Cave à vins</small></h1>
+                   </div>
+               </div>
+           </header>
            <!-- Fin header -->
 
            <!-- Angular -->
@@ -58,17 +73,16 @@
         </div>
 
        <!-- Footer avec le menu -->
-       <footer class="navbar-center">
-           <nav class="navbar-center navbar-fixed-bottom">
-               <ul class="nav nav-pills navbar-center">
+           <nav class="main navbar-center navbar-fixed-bottom navbar navbar-default">
+               <ul class="nav navbar-nav nav-tabs">
                    <li><a href="#/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
                    <li><a href="#/presentation"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a></li>
                    <li><a href="#/wine"><span class="glyphicon glyphicon-glass" aria-hidden="true"></span></a></li>
                    <li><a href="#/allmoment"><span class="glyphicon glyphicon-camera" aria-hidden="true"></span></a></li>
+                   <li><a href="#/games/home"><span class="glyphicon glyphicon-expand" aria-hidden="true"></span></a></li>
                    <li><a href="#/about"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span></a></li>
                </ul>
            </nav>
-       </footer>
        <!-- Fin Footer avec le menu -->
 
 

@@ -1,5 +1,5 @@
 ﻿﻿<div class='navbarMoment'>
-    <nav class="navbar navbar-fixed-top">
+    <nav class="navbar">
         <ul class="nav navbar-nav">
             <li class='pull-left'><a href="#/allmoment">All Moments</a></li>
             <li class='pull-right'><a href="#/addmoment">Add Moment</a></li>
@@ -11,9 +11,9 @@
 
 <div ng-repeat="moment in moments">
     <div>
+        <img class="img-moment img-responsive" style="background:url('{{moment.image}}') 50% 50%;" src="datas/img/transp.png"/>
         <a href='#/moment/{{ $index }}'>
-            <img class="img-moment" style="background:url('{{moment.image}}') 50% 50%;" src="datas/img/transp.png"/>
-            <p>{{ moment.title }}</p>
+            <p class='label label-info'>{{ moment.title }}</p>
         </a>
     </div>
 </div>

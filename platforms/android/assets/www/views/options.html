@@ -1,0 +1,45 @@
+<div id='option'>
+	<form ng-submit='createGame()'>
+		<h3>Paramètres de jeu</h3>
+		<div class='form-group'>
+		    <label for='name'> Nom du Joueur </label>
+		    <input type='text' class='form-control' id='games-player' placeholder='Joueur' autofocus autocomplete='off' name="games(player)" ng-model="games.player">
+		 </div>
+
+		 <div class='form-group'>
+		    <label> Choisir votre vignoble </label>
+			<select class='form-control' name="games(ville)" ng-model="games.ville" id="games-ville">
+				<option value='Bordeaux' selected='selected'> Bordeaux </option>
+			</select>
+		</div>
+
+		<div class='form-group'>
+		    <label> Choisir une difficulté </label>
+			<select class='form-control' name="games(level)" ng-model="games.level" id="games-level">
+				<option value='Facile' selected='selected'> Facile </option>
+				<option value='Normale' > Normale </option>
+				<option value='Difficile'> Difficile </option>
+			</select>
+		</div>
+
+		<button class='btn btn-primary btn-lg btn-block'>Lancer</button>
+	</form>
+</div>
+
+<!-- ng-click='traitement(joueur,ville, difficulte)' -->
+
+
+
+<!-- <div ng-init='init()'>
+	Hello
+	<form name='myform' ng-submit='createGame()'>
+		<input type='text' name="games(player)" ng-model="games.player" id="games-player" required class="big-input" />
+		<input type='text' name="games(level)" ng-model="games.level" id="games-level" required class="big-input" />
+		<input type='text' name="games(ville)" ng-model="games.ville" id="games-ville" required class="big-input" />
+		<button>PLAY</button>
+	</form>
+
+	{{games.player}}
+	{{games.level}}
+	{{games.ville}}
+</div> -->
