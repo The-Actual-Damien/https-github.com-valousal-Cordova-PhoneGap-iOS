@@ -11,8 +11,8 @@
 
 <div ng-repeat="moment in moments">
     <div>
-        <img class="img-moment img-responsive" style="background:url('{{moment.image}}') 50% 50%;" src="datas/img/transp.png"/>
         <a href='#/moment/{{ $index }}'>
+            <img class="img-moment img-responsive" style="background:url('{{moment.image}}') 50% 50%;" src="datas/img/transp.png"/>
             <p class='label label-info'>{{ moment.title }}</p>
         </a>
     </div>

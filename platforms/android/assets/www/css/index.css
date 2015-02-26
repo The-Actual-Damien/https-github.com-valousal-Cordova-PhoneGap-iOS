@@ -5,6 +5,7 @@
 body {
     font-family: 'Segoe UI Light';
     color: #1f3e1d; //#f4eb23
+    font-size:2em;
 }
 
 /* HEADER */
@@ -13,13 +14,13 @@ header {
 }
 
 header div.home a{
-    font-size:40px;
+    font-size:2em;
 }
 
 /* /HEADER */
 
 div.container-fluid{
-    margin-bottom:70px;
+    margin-bottom:10vh;
 }
 
 .mbotop {
@@ -33,14 +34,24 @@ div.container-fluid{
 
 /* FOOTER */
 nav.main ul li{
-    width:18%;
+    //width:18%;
 }
 
 nav.main ul li a{
-    font-size:40px;
+    font-size:3em;
    // text-align:center;
 }
 /* /FOOTER */
+
+/* HEADER */
+header {
+    //position:fixed;
+    //top: 3px;
+    //height: 280px;
+}
+
+
+/* /HEADER */
 /***************************************/
 /************ ACCUEIL *******************/
 /**************************************/
@@ -81,7 +92,7 @@ nav.main ul li a{
 #divMap{
     margin-top: 20px;
     height: 40vh;
-}
+ }
 
 
 
@@ -89,11 +100,23 @@ nav.main ul li a{
 /*********** ABOUT *******************/
 /**************************************/
 #map {
-    height: 380px;
+    height: 280px;
     width:100%;
 }
 
 
+
+
+/***************************************/
+/*********** PRESENTATION **************/
+/**************************************/
+.presentation{
+    margin-bottom:25vh;
+}
+
+div.vcenter{
+    vertical-align: middle;
+}
 
 
 
