@@ -11,6 +11,13 @@ body {
 /* HEADER */
 header {
     color:#f4eb23;
+    position:fixed;
+    top:0px;
+    left:0px;
+    right:0px;
+    height:120px;
+    background-color:white;
+    z-index:999;
 }
 
 header div.home a{
@@ -19,8 +26,9 @@ header div.home a{
 
 /* /HEADER */
 
-div.container-fluid{
-    margin-bottom:10vh;
+.angular{
+    margin-top:120px;
+    margin-bottom:100px;
 }
 
 .mbotop {
@@ -59,7 +67,8 @@ header {
     margin:0px;
 }
 
-
+#progressBar { border:1px solid #aaa; color:#fff; width:292px; height:20px; }
+#played { background-color:#aaa; height:20px; display:inline-block; }
 /***************************************/
 /********ALL MOMENT *******************/
 /**************************************/
@@ -120,6 +129,13 @@ div.vcenter{
 
 
 
+/***************************************/
+/***************** WINE **************/
+/**************************************/
+#wine_champagne{
+    //background:url('../datas/img/backgroundchampagne.jpg');
+    background-color:red;
+}
 
 /***************************************/
 /*********** GAMES *******************/

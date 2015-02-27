@@ -53,19 +53,11 @@ app.controller('addMomentController', function ($scope, $rootScope, $location, $
 
 
    $scope.addPicture = function () {
-        /*var options = {
-              quality: 50,
-              destinationType: Camera.DestinationType.DATA_URL,
-              sourceType: Camera.PictureSourceType.CAMERA,
-              allowEdit: true,
-              encodingType: Camera.EncodingType.JPEG,
-              targetWidth: 100,
-              targetHeight: 100,
+           options = {
               saveToPhotoAlbum: true,
-              popoverOptions: CameraPopoverOptions
-            };*/
+            };
 
-        $cordovaCamera.getPicture()
+        $cordovaCamera.getPicture(options)
             .then(function (imageData) {
 
                 $scope.moment.image = imageData;
