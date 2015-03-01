@@ -1,4 +1,4 @@
-// Grab a handle to the video object
+            // Grab a handle to the video object
 			var video = document.getElementsByTagName("video")[0];
 			// Turn off the default browser controls
 			video.controls = false;
