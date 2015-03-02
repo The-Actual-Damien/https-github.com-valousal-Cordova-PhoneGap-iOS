@@ -22,8 +22,47 @@ app.config(function ($routeProvider, $compileProvider, $locationProvider) {
             controller: 'wineController'
         })
 
+        //Les différents vins
         .when('/wine/champagne', {
             templateUrl: 'views/wine_champagne.html',
+            controller: 'wineController'
+        })
+        .when('/wine/rhone', {
+            templateUrl: 'views/wine_rhone.html',
+            controller: 'wineController'
+        })
+        .when('/wine/bordeaux', {
+            templateUrl: 'views/wine_bordeaux.html',
+            controller: 'wineController'
+        })
+
+        .when('/wine/bourgogne', {
+            templateUrl: 'views/wine_bourgogne.html',
+            controller: 'wineController'
+        })
+
+        .when('/wine/loire', {
+            templateUrl: 'views/wine_loire.html',
+            controller: 'wineController'
+        })
+
+        .when('/wine/alsace', {
+            templateUrl: 'views/wine_alsace.html',
+            controller: 'wineController'
+        })
+
+        .when('/wine/rhum', {
+            templateUrl: 'views/wine_rhume.html',
+            controller: 'wineController'
+        })
+
+        .when('/wine/whisky', {
+            templateUrl: 'views/wine_whisky.html',
+            controller: 'wineController'
+        })
+
+        .when('/wine/eaux', {
+            templateUrl: 'views/wine_eaux.html',
             controller: 'wineController'
         })
 
@@ -33,10 +72,7 @@ app.config(function ($routeProvider, $compileProvider, $locationProvider) {
         })
 
 
-
-
-
-
+        //Routage pour le jeu
         .when('/games/home', {
             templateUrl: 'views/home.html',
             controller: 'gameController'
@@ -58,13 +94,7 @@ app.config(function ($routeProvider, $compileProvider, $locationProvider) {
             controller: 'gameController'
         })
 
-
-
-
-
-
-
-
+        //Routage pour l'appli photo
         .when('/allmoment', {
             templateUrl: 'views/allMoments.html',
             controller: 'allMomentsController'

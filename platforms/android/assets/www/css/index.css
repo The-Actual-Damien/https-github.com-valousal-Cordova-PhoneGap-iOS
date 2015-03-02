@@ -41,6 +41,14 @@ header div.home a{
 }
 
 /* FOOTER */
+nav{
+    text-align:center;
+}
+nav ul{
+    margin-left:10%;
+    margin-right:10%;
+    //width:700px;
+}
 nav.main ul li{
     //width:18%;
 }
@@ -52,11 +60,7 @@ nav.main ul li a{
 /* /FOOTER */
 
 /* HEADER */
-header {
-    //position:fixed;
-    //top: 3px;
-    //height: 280px;
-}
+
 
 
 /* /HEADER */
@@ -120,7 +124,7 @@ header {
 /*********** PRESENTATION **************/
 /**************************************/
 .presentation{
-    margin-bottom:25vh;
+    margin-bottom:200px;
 }
 
 div.vcenter{
@@ -133,8 +137,8 @@ div.vcenter{
 /***************** WINE **************/
 /**************************************/
 #wine_champagne{
-    //background:url('../datas/img/backgroundchampagne.jpg');
-    background-color:red;
+    //height:100%;
+    //background:url("../datas/img/backgroundchampagne.jpg");
 }
 
 /***************************************/
@@ -171,6 +175,7 @@ div.vcenter{
   margin: 7rem auto;
   position: relative;
   padding: 0;
+  background:url('../datas/img/map.jpg');
 }
 @media screen and (max-width: 640px) {
   /* line 1, ../sass/_home.scss */

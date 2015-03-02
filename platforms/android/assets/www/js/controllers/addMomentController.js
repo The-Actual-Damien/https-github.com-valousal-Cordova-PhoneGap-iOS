@@ -13,7 +13,7 @@ app.controller('addMomentController', function ($scope, $rootScope, $location, $
 
         }, function (error) { },
         { enableHighAccuracy: true }
-        );
+    );
 
     $scope.addMoment = function () {
 
