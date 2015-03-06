@@ -6,6 +6,7 @@ body {
     font-family: 'Segoe UI Light';
     color: #1f3e1d; //#f4eb23
     font-size:2em;
+    //background:lightgrey;
 }
 
 /* HEADER */
@@ -21,7 +22,10 @@ header {
 }
 
 header div.home a{
-    font-size:2em;
+    font-size:3em;
+    position:absolute;
+    top : 40px;
+    left : 40px;
 }
 
 /* /HEADER */
@@ -104,7 +108,13 @@ nav.main ul li a{
 
 #divMap{
     margin-top: 20px;
-    height: 40vh;
+    height: 280px;
+    width:100%;
+ }
+
+ .titre-image{
+    //font-style:
+
  }
 
 
@@ -123,13 +133,6 @@ nav.main ul li a{
 /***************************************/
 /*********** PRESENTATION **************/
 /**************************************/
-.presentation{
-    margin-bottom:200px;
-}
-
-div.vcenter{
-    vertical-align: middle;
-}
 
 
 
@@ -172,10 +175,12 @@ div.vcenter{
 #home {
   height: 500px;
   width: 640px;
-  margin: 7rem auto;
+  margin-top:50%;
+  //margin-bottom:auto;
+  //margin: 7rem auto;
   position: relative;
   padding: 0;
-  background:url('../datas/img/map.jpg');
+  //background:url('../datas/img/map.jpg');
 }
 @media screen and (max-width: 640px) {
   /* line 1, ../sass/_home.scss */

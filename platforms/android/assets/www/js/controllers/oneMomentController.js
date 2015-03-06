@@ -1,10 +1,9 @@
 app.controller('oneMomentController', function ($scope, $rootScope, $routeParams) {
 
     $scope.moment = $rootScope.moments[$routeParams.id];
-    $scope.toto = 'aa';
     $scope.getMap = function () {
 
-        Microsoft.Maps.loadModule(
+        /*Microsoft.Maps.loadModule(
             'Microsoft.Maps.Map',
             {
                 callback: function () {
@@ -30,12 +29,24 @@ app.controller('oneMomentController', function ($scope, $rootScope, $routeParams
 
                 }
             }
-            );
+        );*/
+       // create a map in the "map" div, set the view to a given place and zoom
+       var map = L.map('divMap').setView([$scope.moment.geolocation.lat,$scope.moment.geolocation.lon], 10);
+
+       // add an OpenStreetMap tile layer
+       L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+           attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+       }).addTo(map);
+
+       // add a marker in the given location, attach some popup content to it and open the popup
+       L.marker([$scope.moment.geolocation.lat,$scope.moment.geolocation.lon]).addTo(map)
+               .bindPopup('Photo prise ici')
+            .openPopup();
 
     };
 
-    if ($scope.moment.geolocation) {
+    /*if ($scope.moment.geolocation) {
         $scope.getMap();
-    }
+    }*/
 
 });

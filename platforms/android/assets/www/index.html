@@ -50,46 +50,47 @@
 
     <!-- BODY -->
     <body>
-       <div class="container-fluid">
-           <!-- Header -->
-           <header>
-               <div class="row">
-                   <div class='col-xs-1 home'>
-                        <a href="#/">
-                            <span class="glyphicon glyphicon-home text-center" aria-hidden="true"></span>
-                        </a>
+        <div class="content">
+           <div class="container-fluid">
+               <!-- Header -->
+               <header>
+                   <div class="row">
+                       <div class='col-xs-1 home'>
+                           <a href="#/">
+                               <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                           </a>
+                       </div>
+                       <div class='col-xs-11'>
+                           <h1 class='text-right'>Les vendanges de Fougeron<br><small>Cave à vins</small></h1>
+                       </div>
                    </div>
-                   <div class='col-xs-11'>
-                       <h1 class='text-right'>Les vendanges de Fougeron<br><small>Cave à vins</small></h1>
-                   </div>
-               </div>
-           </header>
-           <hr>
-           <!-- Fin header -->
+               </header>
+               <hr>
+               <!-- Fin header -->
 
-           <!-- Angular -->
-            <div class='angular'>
-                <ng-view></ng-view>
+               <!-- Angular -->
+                <div class='angular'>
+                    <ng-view></ng-view>
+                </div>
+               <!-- Fin Angular -->
+
+
+               <!-- Footer avec le menu -->
+               <nav class="main navbar-center navbar-fixed-bottom navbar navbar-default">
+                   <ul class="nav navbar-nav nav-tabs">
+                       <li><a href="#/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
+                       <li><a href="#/presentation"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a></li>
+                       <li><a href="#/wine"><span class="glyphicon glyphicon-glass" aria-hidden="true"></span></a></li>
+                       <li><a href="#/allmoment"><span class="glyphicon glyphicon-camera" aria-hidden="true"></span></a></li>
+                       <li><a href="#/games/home"><span class="glyphicon glyphicon-expand" aria-hidden="true"></span></a></li>
+                       <li><a href="#/about"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span></a></li>
+                   </ul>
+               </nav>
+               <!-- Fin Footer avec le menu -->
+
+
             </div>
-           <!-- Fin Angular -->
-
-
-           <!-- Footer avec le menu -->
-           <nav class="main navbar-center navbar-fixed-bottom navbar navbar-default">
-               <ul class="nav navbar-nav nav-tabs">
-                   <li><a href="#/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
-                   <li><a href="#/presentation"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a></li>
-                   <li><a href="#/wine"><span class="glyphicon glyphicon-glass" aria-hidden="true"></span></a></li>
-                   <li><a href="#/allmoment"><span class="glyphicon glyphicon-camera" aria-hidden="true"></span></a></li>
-                   <li><a href="#/games/home"><span class="glyphicon glyphicon-expand" aria-hidden="true"></span></a></li>
-                   <li><a href="#/about"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span></a></li>
-               </ul>
-           </nav>
-           <!-- Fin Footer avec le menu -->
-
-
         </div>
-
 
 
 
