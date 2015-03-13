@@ -47,6 +47,7 @@
         <link href='js/lib/leaflet-routing-machine.css' />
 
         <!-- Gallery -->
+        <link rel="stylesheet" href="css/blueimp-gallery.min.css">
         <link rel="stylesheet" href="css/blueimp-gallery.css">
         <link rel="stylesheet" href="css/blueimp-gallery-indicator.css">
         <link rel="stylesheet" href="css/blueimp-gallery-video.css">
@@ -81,7 +82,7 @@
 
 
                <!-- Footer avec le menu -->
-               <nav class="main navbar-center navbar-fixed-bottom navbar navbar-default">
+               <nav class="main navbar-center navbar-fixed-bottom navbar" style="background-color:#f4eb23;">
                    <ul class="nav navbar-nav nav-tabs">
                        <li><a href="#/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
                        <li><a href="#/presentation"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a></li>
@@ -123,14 +124,14 @@
         <script src="js/lib/blueimp-gallery-youtube.js"></script>
         <script src="js/lib/jquery.blueimp-gallery.js"></script>
         <script>
-        blueimp.Gallery(
-            document.getElementById('links').getElementsByTagName('a'),
-            {
-                container: '#blueimp-gallery-carousel',
-                carousel: true
-            }
-        );
-</script>
+            blueimp.Gallery(
+                 $('#links a'),
+                {
+                    container: '#blueimp-gallery-carousel',
+                    carousel: true
+                }
+            );
+        </script>
 
 
     </body>

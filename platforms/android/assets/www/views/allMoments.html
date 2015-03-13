@@ -1,8 +1,8 @@
 ﻿﻿<div class='navbarMoment'>
     <nav class="navbar">
         <ul class="nav navbar-nav">
-            <li class='pull-left'><a href="#/allmoment">All Moments</a></li>
-            <li class='pull-right'><a href="#/addmoment">Add Moment</a></li>
+            <li class='pull-left'><a href="#/allmoment" class="btn btn-primary">All Moments</a></li>
+            <li class='pull-right'><a href="#/addmoment" class="btn btn-primary">Add Moment</a></li>
         </ul>
     </nav>
 </div>
@@ -13,7 +13,7 @@
     <div style='margin-bottom:50px;'>
         <a href='#/moment/{{ $index }}'>
             <img class="img-moment img-responsive" style="background:url('{{moment.image}}') 50% 50%;" src="datas/img/transp.png"/>
-            <p class='label label-info'>{{ moment.title }}</p>
+            <p class='label label-info' style="font-size:1.2em">{{ moment.title }}</p>
         </a>
     </div>
 </div>

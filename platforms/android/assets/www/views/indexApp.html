@@ -1,83 +1,44 @@
-<!-- The Gallery as inline carousel, can be positioned anywhere on the page -->
-<!--<div id="blueimp-gallery-carousel" class="blueimp-gallery blueimp-gallery-carousel">
-    <div class="slides"></div>
-    <h3 class="title"></h3>
-    <a class="prev">‹</a>
-    <a class="next">›</a>
-    <a class="play-pause"></a>
-</div>
-<div id="links">
-    <a href="images/banana.jpg" title="Banana">
-        <img src="datas/img/cave1.jpg" alt="Banana">
-    </a>
-    <a href="images/apple.jpg" title="Apple">
-        <img src="datas/img/cave1.jpg" alt="Apple">
-    </a>
-    <a href="images/orange.jpg" title="Orange">
-        <img src="datas/img/cave1.jpg" alt="Orange">
-    </a>
-</div>-->
-<div class="row">
-    <!-- CARROUSEL -->
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <img src="datas/img/cave1.jpg" alt="image1">
-                <div class="carousel-caption">
-                    <p>Une vitrine attirante</p>
-                </div>
-            </div>
-            <div class="item">
-                <img src="datas/img/cave3.jpg" alt="image2">
-                <div class="carousel-caption">
-                    <p>Visible depuis la route</p>
-                </div>
-            </div>
-            <div class="item">
-                <img src="datas/img/cave4.jpg" alt="image3">
-                <div class="carousel-caption">
-                    <p>Des coffrets à votre gout</p>
-                </div>
-            </div>
-        </div>
-        <!-- Controls -->
-        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-
+    <div id="blueimp-gallery-carousel" class="blueimp-gallery blueimp-gallery-carousel">
+        <div class="slides"></div>
+        <h3 class="title"></h3>
+        <a class="prev">‹</a>
+        <a class="next">›</a>
+        <a class="play-pause"></a>
+        <ol class="indicator"></ol>
     </div>
-    <!-- FIN CARROUSEL -->
-</div>
+
+
+    <div id="links">
+        <a href="datas/img/cave1.jpg" title="Banana">
+            <!--<img src="#" alt="Banana">-->
+        </a>
+        <a href="datas/img/cave1.jpg" title="Apple">
+            <!--<img src="#" alt="Banana">-->
+        </a>
+        <a href="datas/img/cave1.jpg" title="Orange">
+            <!--<img src="#" alt="Banana">-->
+        </a>
+    </div>
+
 
 
 <hr>
 
 <!--<h2>Dernières actus</h2>-->
 <div class="row" id="back-bottle">
-    <img id='img-bottle' src="datas/img/rocks.png" />
+    <!--<img id='img-bottle' src="datas/img/rocks.png" />-->
     <div id="bottle"></div>
 </div>
 <div class="row">
     <h3>Comment servir du champagne</h3>
     <div > <!-- class="embed-responsive "embed-responsive-16by9 class="embed-responsive-item"-->
         <!-- Define the video -->
-        <video controls>
+        <!--<video controls>
             <source src="datas/video/grass-in-the-wind-sma.mp4" type="video/mp4">
             <source src="datas/video/grass-in-the-wind-sma.webm" type="video/webm">
-        </video>
+        </video>-->
         <!-- Define the controls -->
-        <div id="controls">
+        <!--<div id="controls">
             <div id="progressBar"><span id="played"></span></div>
             <button id="playpause" alt="play" title="play" onclick="VideoPlayer.play('file://datas/video/grass-in-the-wind-sma.mp4')">play</button>
             <button id="stop" alt="stop" title="stop" onclick="stopVideo()">stop</button>
@@ -86,7 +47,7 @@
             <button id="volumeDown" alt="decrease volume" title="-" onclick="changeVolume('-')">-</button>
             <button id="volumeUp" alt="increase volume" title="+" onclick="changeVolume('+')">+</button>
             <button id="mute" alt="mute" title="mute" onclick="toggleMute()">mute</button>
-        </div>
+        </div>-->
         <!--<script>VideoPlayer.play("https://www.youtube.com/watch?v=ujuA8YVExMg")</script>-->
     </div>
 </div>
