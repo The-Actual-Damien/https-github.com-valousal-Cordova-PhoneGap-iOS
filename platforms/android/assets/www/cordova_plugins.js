@@ -173,6 +173,13 @@ module.exports = [
         "clobbers": [
             "CameraPopoverHandle"
         ]
+    },
+    {
+        "file": "plugins/com.dawsonloudon.videoplayer/www/VideoPlayer.js",
+        "id": "com.dawsonloudon.videoplayer.VideoPlayer",
+        "clobbers": [
+            "VideoPlayer"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -180,7 +187,8 @@ module.exports.metadata =
 {
     "org.apache.cordova.file": "1.3.2",
     "org.apache.cordova.geolocation": "0.3.11",
-    "org.apache.cordova.camera": "0.3.4"
+    "org.apache.cordova.camera": "0.3.4",
+    "com.dawsonloudon.videoplayer": "1.0.0"
 }
 // BOTTOM OF METADATA
 });

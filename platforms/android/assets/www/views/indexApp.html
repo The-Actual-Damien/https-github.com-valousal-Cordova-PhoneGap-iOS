@@ -1,3 +1,22 @@
+<!-- The Gallery as inline carousel, can be positioned anywhere on the page -->
+<!--<div id="blueimp-gallery-carousel" class="blueimp-gallery blueimp-gallery-carousel">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="play-pause"></a>
+</div>
+<div id="links">
+    <a href="images/banana.jpg" title="Banana">
+        <img src="datas/img/cave1.jpg" alt="Banana">
+    </a>
+    <a href="images/apple.jpg" title="Apple">
+        <img src="datas/img/cave1.jpg" alt="Apple">
+    </a>
+    <a href="images/orange.jpg" title="Orange">
+        <img src="datas/img/cave1.jpg" alt="Orange">
+    </a>
+</div>-->
 <div class="row">
     <!-- CARROUSEL -->
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -41,14 +60,34 @@
     <!-- FIN CARROUSEL -->
 </div>
 
+
 <hr>
 
-<h2>Dernières actus</h2>
+<!--<h2>Dernières actus</h2>-->
+<div class="row" id="back-bottle">
+    <img id='img-bottle' src="datas/img/rocks.png" />
+    <div id="bottle"></div>
+</div>
 <div class="row">
     <h3>Comment servir du champagne</h3>
     <div > <!-- class="embed-responsive "embed-responsive-16by9 class="embed-responsive-item"-->
         <!-- Define the video -->
-
+        <video controls>
+            <source src="datas/video/grass-in-the-wind-sma.mp4" type="video/mp4">
+            <source src="datas/video/grass-in-the-wind-sma.webm" type="video/webm">
+        </video>
+        <!-- Define the controls -->
+        <div id="controls">
+            <div id="progressBar"><span id="played"></span></div>
+            <button id="playpause" alt="play" title="play" onclick="VideoPlayer.play('file://datas/video/grass-in-the-wind-sma.mp4')">play</button>
+            <button id="stop" alt="stop" title="stop" onclick="stopVideo()">stop</button>
+            <button id="rewind" alt="rewind" title="rewind" onclick="changePlaybackSpeed('-');" >&laquo;</button>
+            <button id="ffwd" alt="fast forward" title="fast forward" onclick="changePlaybackSpeed('+');" >&raquo;</button>
+            <button id="volumeDown" alt="decrease volume" title="-" onclick="changeVolume('-')">-</button>
+            <button id="volumeUp" alt="increase volume" title="+" onclick="changeVolume('+')">+</button>
+            <button id="mute" alt="mute" title="mute" onclick="toggleMute()">mute</button>
+        </div>
+        <!--<script>VideoPlayer.play("https://www.youtube.com/watch?v=ujuA8YVExMg")</script>-->
     </div>
 </div>
 

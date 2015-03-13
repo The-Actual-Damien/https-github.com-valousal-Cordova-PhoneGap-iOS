@@ -45,6 +45,11 @@
         <!-- Leaflet -->
         <link rel='stylesheet' href='http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css' />
         <link href='js/lib/leaflet-routing-machine.css' />
+
+        <!-- Gallery -->
+        <link rel="stylesheet" href="css/blueimp-gallery.css">
+        <link rel="stylesheet" href="css/blueimp-gallery-indicator.css">
+        <link rel="stylesheet" href="css/blueimp-gallery-video.css">
     </head>
 
 
@@ -107,7 +112,25 @@
        <script src='js/lib/leaflet-routing-machine.min.js'></script>
 
 
-
+        <!-- Gallery -->
+        <script src="js/lib/blueimp-gallery.min.js"></script>
+        <script src="js/lib/blueimp-helper.js"></script>
+        <script src="js/lib/blueimp-gallery.js"></script>
+        <script src="js/lib/blueimp-gallery-fullscreen.js"></script>
+        <script src="js/lib/blueimp-gallery-indicator.js"></script>
+        <script src="js/lib/blueimp-gallery-video.js"></script>
+        <script src="js/lib/blueimp-gallery-vimeo.js"></script>
+        <script src="js/lib/blueimp-gallery-youtube.js"></script>
+        <script src="js/lib/jquery.blueimp-gallery.js"></script>
+        <script>
+        blueimp.Gallery(
+            document.getElementById('links').getElementsByTagName('a'),
+            {
+                container: '#blueimp-gallery-carousel',
+                carousel: true
+            }
+        );
+</script>
 
 
     </body>

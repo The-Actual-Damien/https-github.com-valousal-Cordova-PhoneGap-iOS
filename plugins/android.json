@@ -15,6 +15,10 @@
                         {
                             "xml": "<feature name=\"Camera\"><param name=\"android-package\" value=\"org.apache.cordova.camera.CameraLauncher\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"VideoPlayer\"><param name=\"android-package\" value=\"com.dawsonloudon.videoplayer.VideoPlayer\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -33,6 +37,10 @@
                         {
                             "xml": "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\" />",
                             "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
+                            "count": 1
                         }
                     ]
                 }
@@ -47,6 +55,9 @@
             "PACKAGE_NAME": "com.LesVendangesDeFougeron.CaveAVins"
         },
         "org.apache.cordova.camera": {
+            "PACKAGE_NAME": "com.LesVendangesDeFougeron.CaveAVins"
+        },
+        "com.dawsonloudon.videoplayer": {
             "PACKAGE_NAME": "com.LesVendangesDeFougeron.CaveAVins"
         }
     },
