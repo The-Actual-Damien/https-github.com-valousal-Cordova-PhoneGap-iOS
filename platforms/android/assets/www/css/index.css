@@ -21,7 +21,7 @@ header {
     z-index:999;
 }
 
-header div.home a{
+header div.home { //a
     font-size:3em;
     position:absolute;
     top : 40px;
@@ -92,8 +92,8 @@ img#img-bottle {
 
 #bottle {
     //position:				absolute;
-    height:					500px;
-    width:					400px;
+    height:					50px; //500px
+    width:					40px; //400px
     //left:					50%;
     margin-left:			auto;
     margin-right:           auto;
