@@ -1,22 +1,23 @@
-    <div id="blueimp-gallery-carousel" class="blueimp-gallery blueimp-gallery-carousel">
-        <div class="slides"></div>
-        <h3 class="title"></h3>
-        <a class="prev">‹</a>
-        <a class="next">›</a>
-        <a class="play-pause"></a>
-        <ol class="indicator"></ol>
-    </div>
+<!-- The Gallery as inline carousel, can be positioned anywhere on the page -->
+<div id="blueimp-gallery-carousel" class="blueimp-gallery blueimp-gallery-carousel">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+</div>
 
 
     <div id="links">
-        <a href="datas/img/cave1.jpg" title="Banana">
-            <!--<img src="#" alt="Banana">-->
+        <a href="datas/img/cave1.jpg" title="Vitrine">
+
         </a>
-        <a href="datas/img/cave1.jpg" title="Apple">
-            <!--<img src="#" alt="Banana">-->
+        <a href="datas/img/cave2.jpg" title="Coffret">
+
         </a>
-        <a href="datas/img/cave1.jpg" title="Orange">
-            <!--<img src="#" alt="Banana">-->
+        <a href="datas/img/cave3.jpg" title="Vitrine">
+
         </a>
     </div>
 
@@ -51,4 +52,15 @@
         <!--<script>VideoPlayer.play("https://www.youtube.com/watch?v=ujuA8YVExMg")</script>-->
     </div>
 </div>
+
+<script src="js/lib/blueimp-gallery.min.js"></script>
+<script>
+blueimp.Gallery(
+    document.getElementById('links').getElementsByTagName('a'),
+    {
+        container: '#blueimp-gallery-carousel',
+        carousel: true
+    }
+);
+</script>
 
