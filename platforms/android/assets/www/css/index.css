@@ -11,13 +11,13 @@ body {
 
 /* HEADER */
 header {
-    color:#f4eb23;
+    color:black;
     position:fixed;
     top:0px;
     left:0px;
     right:0px;
     height:120px;
-    background-color:white;
+    background-color:#f4eb23;
     z-index:999;
 }
 
@@ -48,6 +48,7 @@ header div.home { //a
 nav{
     text-align:center;
     width:100%;
+    background-color:#f4eb23;
 }
 nav ul{
     margin-left:10%;
@@ -56,11 +57,13 @@ nav ul{
 }
 nav.main ul li{
     width:16.65%;
+    color:black;
 }
 
 nav.main ul li a{
     font-size:3em;
    // text-align:center;
+   color:black;
 }
 
 
@@ -181,7 +184,10 @@ img#img-bottle {
 /***************************************/
 /*********** PRESENTATION **************/
 /**************************************/
-
+#img-resp{
+    width:60%;
+    margin:auto;
+}
 
 
 /***************************************/

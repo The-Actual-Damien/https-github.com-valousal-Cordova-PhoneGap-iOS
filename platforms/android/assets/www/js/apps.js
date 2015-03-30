@@ -14,7 +14,7 @@ app.config(function ($routeProvider, $compileProvider, $locationProvider) {
 
         .when('/presentation', {
             templateUrl: 'views/presentation.html',
-            controller: 'presentationController'
+            controller: 'indexController'
         })
 
         .when('/wine', {

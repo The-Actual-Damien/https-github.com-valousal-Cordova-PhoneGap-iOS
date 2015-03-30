@@ -1,5 +1,5 @@
 ﻿﻿<div class='navbarMoment'>
-    <nav class="navbar">
+    <nav class="navbar" style="background-color:white">
         <ul class="nav navbar-nav">
             <li class='pull-left'><a href="#/allmoment">All Moments</a></li>
             <li class='pull-right'><a href="#/addmoment">Add Moment</a></li>
@@ -8,8 +8,8 @@
 </div>
 
 
-
-<div class='add-moment'>
+<div class='add-moment' id='option'>
+    <h3>Ajouter votre moment</h3>
     <form role='form' class='col-xs-12'>
         <div class='form-group'>
             <label for='title'>Moment title</label>
@@ -17,7 +17,7 @@
         </div>
         <div class='form-group'>
             <label for='image'>Moment images</label>
-            <button id="image" ng-click='addPicture()' class='form-control btn btn-default'>Add image</button>
+            <button id="image" ng-click='addPicture()' class='btn btn-default'>Add image</button>
             <img src="{{ moment.image }}" class='img-create'/>
         </div>
         <div>
@@ -25,6 +25,6 @@
                 {{ moment.geolocation != undefined ? 'Localisation (actif)' : 'Localisation (recherche en cours...)' }}
             </label>
         </div>
-        <button ng-click="addMoment()" class='btn btn-default'>Add Moment</button>
+        <button ng-click="addMoment()" class='btn btn-primary btn-lg btn-block'>Valider</button>
     </form>
 </div>
