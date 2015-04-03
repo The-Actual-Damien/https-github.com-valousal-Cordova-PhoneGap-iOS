@@ -33,26 +33,20 @@
 <div class="row">
     <h3>Comment sabrer du champagne</h3>
     <div class="embed-responsive embed-responsive-16by9">
-        <iframe width="560" height="315" class="embed-responsive-item" src="https://www.youtube.com/embed/VdXwcsZyI-I?rel=0" frameborder="0" allowfullscreen"></iframe>
+        <!--<iframe width="560" height="315" class="embed-responsive-item" src="https://www.youtube.com/embed/VdXwcsZyI-I?rel=0" frameborder="0" allowfullscreen"></iframe>
+        -->
+        <video id="example_video_1" class="video-js vjs-default-skin embed-responsive-item"
+               controls
+               poster="http://video-js.zencoder.com/oceans-clip.png"
+               data-setup='{"example_option":true}'>
+            <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' class="embed-responsive-item"/>
+            <!--<source src="datas/video/champagne.mp4" type='video/mp4' />-->
+            <track kind="subtitles" src="datas/video/sabre_champagne.vtt" srclang="en" label="English">
+            <!--<source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+            <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />-->
+            <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+        </video>
 
-        <!-- class="embed-responsive "embed-responsive-16by9 class="embed-responsive-item"-->
-        <!-- Define the video -->
-        <!--<video controls>
-            <source src="datas/video/grass-in-the-wind-sma.mp4" type="video/mp4">
-            <source src="datas/video/grass-in-the-wind-sma.webm" type="video/webm">
-        </video>-->
-        <!-- Define the controls -->
-        <!--<div id="controls">
-            <div id="progressBar"><span id="played"></span></div>
-            <button id="playpause" alt="play" title="play" onclick="VideoPlayer.play('file://datas/video/grass-in-the-wind-sma.mp4')">play</button>
-            <button id="stop" alt="stop" title="stop" onclick="stopVideo()">stop</button>
-            <button id="rewind" alt="rewind" title="rewind" onclick="changePlaybackSpeed('-');" >&laquo;</button>
-            <button id="ffwd" alt="fast forward" title="fast forward" onclick="changePlaybackSpeed('+');" >&raquo;</button>
-            <button id="volumeDown" alt="decrease volume" title="-" onclick="changeVolume('-')">-</button>
-            <button id="volumeUp" alt="increase volume" title="+" onclick="changeVolume('+')">+</button>
-            <button id="mute" alt="mute" title="mute" onclick="toggleMute()">mute</button>
-        </div>-->
-        <!--<script>VideoPlayer.play("https://www.youtube.com/watch?v=ujuA8YVExMg")</script>-->
     </div>
 </div>
 
